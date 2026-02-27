@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basis PHP</title>
+
+</head>
+<body>
+    <header>
+        <h1>
+            Homepage titel
+        </h1>
+    </header>
+    <?php
+        //Een extern bestand includen
+        include "includes/header.php";
+        include "includes/functions.php";
+    ?>
+
+    <main>
+        <h2>Dit is mijn main</h2>
+        <p>Welkom op mijn website</p>
+
+        <?php
+            echo TrafficLight("green", false);
+
+            echo TrafficLight("green", true);
+        ?>
+    </main>
+    <footer>
+        <?php
+
+
+        echo ShowDate();
+        ?>
+        <p>Dit is mijn footer</p>
+    </footer>
+
+</body>
+</html>
